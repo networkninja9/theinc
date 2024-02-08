@@ -1,0 +1,80 @@
+   <style>
+     body {
+            background-color: #f8f9fa; /* Light gray background color */
+            color: #333; /* Dark text color for better readability */
+        }
+        .navbar {
+            background-color: #007bff; /* Blue background color */
+            padding: 10px 0;
+            border-radius: 10px;
+            margin-bottom: 20px; /* Add some margin at the bottom */
+        }
+             /* Styles for the three-bar menu */
+        .navbar-toggle {
+            border: none; /* Remove border */
+            background-color: transparent; /* Transparent background */
+            margin-right: 15px; /* Add some margin to the right */
+        }
+        
+        .navbar-toggle .icon-bar {
+            background-color: #fff; /* White color for the bars */
+            width: 25px; /* Width of each bar */
+            height: 3px; /* Height of each bar */
+            display: block; /* Display as block element */
+            margin-top: 4px; /* Margin between bars */
+        }
+        
+        /* Styles for the dropdown menu */
+        .navbar-nav > li > .dropdown-menu {
+            background-color: #10091f; /* Dark background color for the dropdown menu */
+            border-radius: 10px;
+        }
+        
+        .navbar-nav > li > .dropdown-menu > li > a {
+            color: #fff; /* White color for dropdown menu links */
+        }
+        
+        .navbar-nav > li > .dropdown-menu > li > a:hover,
+        .navbar-nav > li > .dropdown-menu > li > a:focus {
+            background-color: #343a40; /* Darker background color on hover/focus */
+            color: #fff; /* White color for text on hover/focus */
+        }
+
+        /* Media query for mobile responsiveness */
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
+        /* Style for images within the carousel */
+        .carousel-item img {
+            max-width: 700px;
+            max-height: 800px;
+            display: block;
+            margin: auto;
+            border-radius: 99px;
+        }
+          /* Footer */
+          .footer {
+            background-color: #343a40; /* Matching background color as the navbar */
+            color: #fff; /* White text color for footer */
+            padding: 30px 0; /* Add padding to the top and bottom */
+        }
+        
+        .footer h4 {
+            color: #fff; /* White color for footer headings */
+        }
+        
+        .footer p {
+            color: #ccc; /* Light gray color for footer paragraphs */
+        }
+        
+        .footer ul li a {
+            color: #ccc; /* Light gray color for footer links */
+        }
+        
+        .footer ul li a:hover {
+            color: #fff; /* White color for footer links on hover */
+        }
+        </style
