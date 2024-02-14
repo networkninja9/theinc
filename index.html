@@ -13,6 +13,38 @@
     <title>King Tech Inc</title>
 
     <style>
+        @media screen and (max-width: 768px) {
+    /* Adjust the navbar toggle button */
+    .navbar-toggler {
+        margin-right: 0; /* Remove margin */
+    }
+    .navbar-brand {
+        margin-right: auto; /* Push the brand/logo to the left */
+    }
+    .navbar-nav {
+        margin-top: 10px; /* Add some top margin */
+    }
+    .navbar-collapse {
+        border-top: 1px solid #fff; /* Add border to separate from content */
+        padding: 10px; /* Add padding */
+    }
+    .navbar-collapse.collapsing {
+        padding: 0; /* Remove padding during collapse animation */
+    }
+    .navbar-nav .dropdown-menu {
+        position: static; /* Override dropdown menu position */
+        float: none; /* Reset float */
+        width: auto; /* Set width to auto */
+    }
+    .navbar-nav .dropdown-menu > li > a {
+        padding: 10px 20px; /* Add padding to dropdown items */
+    }
+    .navbar-nav .dropdown-menu > li > a:hover,
+    .navbar-nav .dropdown-menu > li > a:focus {
+        background-color: transparent; /* Remove background color on hover/focus */
+    }
+}
+
      body {
             background-color: #f8f9fa; /* Light gray background color */
             color: #333; /* Dark text color for better readability */
@@ -207,4 +239,5 @@
     </script>
 </body>
 </html>
+
 
