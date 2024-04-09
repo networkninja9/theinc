@@ -3,74 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>King Tech Inc</title>
+  <title>Apex Tech Innovations</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="kingfav.png">
-  <!-- Apple Touch Icon -->
-  <link rel="apple-touch-icon" sizes="192x192" href="images/" type="image/png">
+  <link rel="icon" type="image/x-icon" href="apexfav.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #f8f9fa;
-      color: #333;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #1E293B; /* Dark Blue Background */
+      color: #FFFFFF; /* Text Color */
     }
     .navbar {
-      background-color: #007bff;
-      padding: 10px 0;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-    .navbar-toggler {
-      border: none;
-      background-color: transparent;
-      margin-right: 15px;
-    }
-    .navbar-toggler .icon-bar {
-      background-color: #fff;
-      width: 25px;
-      height: 3px;
-      display: block;
-      margin-top: 4px;
-    }
-    .navbar-nav > li > .dropdown-menu {
-      background-color: #10091f;
-      border-radius: 10px;
-    }
-    .navbar-nav > li > .dropdown-menu > li > a {
-      color: #fff;
-    }
-    .navbar-nav > li > .dropdown-menu > li > a:hover,
-    .navbar-nav > li > .dropdown-menu > li > a:focus {
-      background-color: #343a40;
-      color: #fff;
+      background-color: #121B25; /* Darker Blue Navbar */
     }
     .navbar-brand {
-      font-weight: bold;
+      font-size: 1.8rem;
+      color: #FFFFFF;
     }
-    .nav-link {
-      font-weight: 500;
+    .navbar-nav .nav-link {
+      font-size: 1.1rem;
+      color: #FFFFFF;
     }
-    @media screen and (max-width: 992px) {
-      .navbar-collapse {
-        background-color: #007bff;
-        border-radius: 10px;
-      }
-      .navbar-nav {
-        margin: 0 auto;
-      }
-      .navbar-nav .nav-item {
-        text-align: center;
-        padding: 10px 0;
-      }
-      .navbar-nav .nav-link {
-        padding: 10px;
-      }
-      .navbar-nav .nav-item:last-child {
-        border-top: 1px solid #fff;
-      }
+    .navbar-nav .nav-link:hover {
+      color: #70A1FF; /* Light Blue on Hover */
     }
     .navbar-toggler {
       border: none;
@@ -80,196 +40,209 @@
       outline: none;
     }
     .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255,255,255,.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
     .navbar-toggler-icon:focus {
       outline: none;
     }
     .navbar-toggler:hover .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%2370a1ff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
     .navbar-toggler:hover {
       background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
     }
-    .navbar-nav .nav-item .nav-link {
-      color: #fff !important;
+    .header {
+      background-color: #1E293B; /* Dark Blue Header */
+      color: #FFFFFF;
+      padding: 100px 0;
+      text-align: center;
     }
-    .navbar-nav .nav-item .nav-link:hover {
-      color: #fff !important;
-      background-color: rgba(255, 255, 255, 0.1);
+    .header h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
     }
-    .navbar-nav .nav-item .dropdown-menu {
-      background-color: #007bff;
+    .header p {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    .cta-button {
+      background-color: #70A1FF; /* Light Blue Button */
+      color: #FFFFFF;
       border: none;
-      border-radius: 0;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      border-radius: 30px;
+      text-transform: uppercase;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
     }
-    .navbar-nav .nav-item .dropdown-menu .dropdown-item {
-      color: #fff !important;
+    .cta-button:hover {
+      background-color: #1E293B; /* Dark Blue on Hover */
     }
-    .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
-      background-color: rgba(255, 255, 255, 0.1);
+    .about {
+      background-color: #FFFFFF; /* White About Section */
+      padding: 100px 0;
+      text-align: center;
+    }
+    .about h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .about p {
+      font-size: 1.1rem;
+      font-weight: 400;
     }
     .carousel-item img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
-      border-radius: 20px;
+    }
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+      padding: 20px; /* Padding around the text */
+    }
+    .carousel-caption p {
+      border: 2px solid #FFFFFF; /* White Border */
+      padding: 20px; /* Padding around the text */
+    }
+    .services {
+      background-color: #70A1FF; /* Light Blue Services Section */
+      padding: 100px 0;
+      text-align: center;
+    }
+    .services h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #FFFFFF;
+    }
+    .services p {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #FFFFFF;
     }
     .footer {
-      background-color: #343a40;
-      color: #fff;
-      padding: 30px 0;
-    }
-    .footer h4 {
-      color: #fff;
+      background-color: #121B25; /* Darker Blue Footer */
+      color: #FFFFFF;
+      padding: 50px 0;
+      text-align: center;
     }
     .footer p {
-      color: #ccc;
+      font-size: 1.1rem;
+      font-weight: 400;
     }
-    .footer ul li a {
-      color: #ccc;
+    .footer a {
+      color: #FFFFFF;
     }
-    .footer ul li a:hover {
-      color: #fff;
-    }
-    .navbar-brand i,
-    .nav-link i {
-      color: #fff;
-      font-size: 20px;
-    }
-    .navbar-brand i:hover,
-    .nav-link i:hover {
-      color: #ffcd00;
+    .footer a:hover {
+      color: #70A1FF;
     }
   </style>
 </head>
 <body>
-  <header class="text-center text-white py-5" style="background-color: #007bff;">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <h1>Welcome to King Tech Inc</h1>
-      <p>Your one-stop destination for innovative technology solutions</p>
-      <p>Contact us: info@kingtech.com | Phone: +234-901-893-6842</p>
-    </div>
-  </header>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="#">King Tech Inc</a>
+      <a class="navbar-brand" href="#">Apex Tech Innovations</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ourcompany.html">About</a>
+            <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ourservices.html">Services</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Products
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Consultancy</a></li>
-              <li><a class="dropdown-item" href="#">Web Development</a></li>
-              <li><a class="dropdown-item" href="#">Designs</a></li>
-              <li><a class="dropdown-item" href="#">SEO Services</a></li>
-            </ul>
+            <a class="nav-link" href="#">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contactkingtech">Contact</a>
+            <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.facebook.com/people/Solomon-Nungwa/pfbid0NLPwRm3MzjnGwtP863zZenFhJ89jzgBK2UFwJRmP53gxy5YdTieJ4zaC6ttUXcUhl/"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://twitter.com/WizeEnterp"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/solomon-nungwa-54225a147/"><i class="fab fa-linkedin"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://instagram.com/theapexboy_"><i class="fab fa-instagram"></i></a>
-          </li>
-        </ul>
-        <a href="#" class="btn btn-light me-3">Get Started</a>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-light" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
 
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="mnr.jpg" class="d-block w-100" alt="King Tech inc slider image">
-      </div>
-      <div class="carousel-item">
-        <img src="tex.jpg" class="d-block w-100" alt="King Tech Inc slide2">
-      </div>
-      <div class="carousel-item">
-        <img src="meg.jpg" class="d-block w-100" alt="King Tech Inc slide3">
+  <header class="header">
+    <div class="container">
+      <h1>Welcome to Apex Tech Innovations</h1>
+      <p>Your one-stop destination for innovative technology solutions</p>
+      <a href="#" class="btn cta-button">Get Started</a>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="technology.jpg" class="d-block w-100" alt="About Us Image 1">
+            <div class="carousel-caption">
+              <p>At Apex Tech Innovations, we believe in pushing the boundaries of technology to empower individuals and businesses worldwide. Our mission is to revolutionize the digital landscape through innovation, creativity, and excellence. We belive in Quality Assurance, Reliability, Timeliness and Customer Satisfaction.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="apple.jpg" class="d-block w-100" alt="About Us Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="mary.jpg" class="d-block w-100" alt="About Us Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
-  </div>
+  </section>
 
-  <section class="py-5">
+  <section class="services">
     <div class="container">
-      <h2 class="text-center mb-4">Our Services</h2>
+      <h2>Our Services</h2>
+      <p>Here are some of the services we offer:</p>
       <div class="row">
         <div class="col-md-4">
-          <h3>Consultancy</h3>
-          <p>Expert consultancy services to help you make informed technology decisions.</p>
-        </div>
-        <div class="col-md-4">
           <h3>Web Development</h3>
-          <p>Customized web development solutions for your business or personal needs.</p>
+          <p>We specialize in creating responsive and user-friendly websites tailored to your business needs.</p>
         </div>
         <div class="col-md-4">
-          <h3>Designs</h3>
-          <p>Creative design solutions to enhance your brand's visual identity.</p>
+          <h3>Consulting</h3>
+          <p>Our experienced consultants provide strategic guidance and insights to help your business thrive in the digital age.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Design</h3>
+          <p>We offer creative design solutions that captivate your audience and enhance your brand identity.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer bg-dark text-light py-5">
+  <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <h4>Quick Links</h4>
-          <ul class="list-unstyled">
-            <li><a href="#">Home</a></li>
-            <li><a href="ourcompany.html">About</a></li>
-            <li><a href="ourservices.html">Services</a></li>
-            <li><a href="contactkingtech">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>About Us</h4>
-          <p>We are a leading technology company dedicated to providing innovative solutions for our clients.</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Follow Us</h4>
-          <ul class="list-unstyled d-flex justify-content-start">
-            <li class="me-3"><a href="https://www.facebook.com/people/Solomon-Nungwa/pfbid0NLPwRm3MzjnGwtP863zZenFhJ89jzgBK2UFwJRmP53gxy5YdTieJ4zaC6ttUXcUhl/"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="me-3"><a href="https://twitter.com/WizeEnterp"><i class="fab fa-twitter"></i></a></li>
-            <li class="me-3"><a href="https://www.linkedin.com/in/solomon-nungwa-54225a147/"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/theapexboy_"><i class="fab fa-instagram"></i></a></li>
-          </ul>
+        <div class="col-md-12">
+          <p>Follow us on social media:</p>
+          <div class="icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p>&copy; 2024 King Tech Inc. All rights reserved.</p>
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <p>&copy; 2024 Apex Tech Innovations. All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -279,4 +252,3 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
