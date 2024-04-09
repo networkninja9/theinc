@@ -96,17 +96,15 @@
       font-size: 1.1rem;
       font-weight: 400;
     }
+    .about-text-container {
+      background-color: rgba(0, 0, 0, 0.7); /* Dark Background for Text */
+      color: #FFFFFF;
+      padding: 20px;
+      border-radius: 10px;
+    }
     .carousel-item img {
       width: 100%;
       height: auto;
-    }
-    .carousel-caption {
-      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-      padding: 20px; /* Padding around the text */
-    }
-    .carousel-caption p {
-      border: 2px solid #FFFFFF; /* White Border */
-      padding: 20px; /* Padding around the text */
     }
     .services {
       background-color: #70A1FF; /* Light Blue Services Section */
@@ -178,14 +176,14 @@
 
   <section class="about">
     <div class="container">
-      <h2>About Us</h2>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="about-text-container">
+        <h2>About Us</h2>
+        <p>Apex Tech Innovations is a cutting-edge technology company specializing in providing innovative solutions for businesses and individuals. We are committed to delivering excellence.</p>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="technology.jpg" class="d-block w-100" alt="About Us Image 1">
-            <div class="carousel-caption">
-              <p>At Apex Tech Innovations, we believe in pushing the boundaries of technology to empower individuals and businesses worldwide. Our mission is to revolutionize the digital landscape through innovation, creativity, and excellence. We belive in Quality Assurance, Reliability, Timeliness and Customer Satisfaction.</p>
-            </div>
           </div>
           <div class="carousel-item">
             <img src="apple.jpg" class="d-block w-100" alt="About Us Image 2">
